@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+     padding: 15px;
+    position: fixed;
+    z-index: 1;
+}
+.menu{
+   background-color: black;
+    position: fixed;
+    display: block;
+    width:300px;
+    height: 100%;
+    transition: all .2s linear;
+    left:-300px;
+}
+
+nav{
+    top:150px;
+    width: 100%;
+    position: absolute;
+
+
+}
+nav a{
+    text-decoration: none;
+}
+.link{
+    font-size:25px;
+    font-family: "Roboto Condensed";
+    display: block;
+   padding: 20px;
+    color: white;
+    transition: all .2s linear;
+}
+.link:hover{
+    background-color: orange ;
+}
+
+#check:checked ~ .menu{
+transform: translateX(300px);
+}
+
